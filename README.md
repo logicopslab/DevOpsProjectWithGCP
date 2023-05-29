@@ -11,7 +11,7 @@
 7) Test your build changes
 8) You have done a great job! Pat ya back!
 
-**Task distribution**
+**Task Distribution**
 
 **Task 1. Create a Git repository**
 
