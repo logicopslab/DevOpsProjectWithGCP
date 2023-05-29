@@ -1,5 +1,14 @@
 # DevOpsProjectWithGCP
 
+**Prerequisites**
+
+1) Google Cloud tools Cloud Source Repositories.
+2) Cloud Build.
+3) Build triggers. 
+4) Container Registry.
+
+And, a bit of familiarity with GCP. 
+
 **Objectives - In this lab, you will learn how to perform the following tasks:**
 
 1) Create a Git repository
@@ -149,4 +158,11 @@ git push origin master
 
 **Task 6. Test your build changes**
 
-1) 
+1) When the build completes, click on it to see its details. Under Execution Details, copy the Image link, format should be gcr.io/qwiklabs-gcp-00-f23112/devops-repoxx34345xx.
+2) Go to the Compute Engine service. As you did earlier, create a new virtual machine to test this image. Click DEPLOY CONTAINER and paste the image you just copied.
+3) Select Allow HTTP traffic.
+4) When the machine is created, test your change by making a request to the VM's external IP address in your browser. Your new message should be displayed.
+**Note**: You might have to wait a few minutes after the VM is created for the Docker container to start.
+
+**Congratulations!**
+In this lab, you built a continuous integration pipeline using the Google Cloud tools Cloud Source Repositories, Cloud Build, build triggers, and Container Registry.
