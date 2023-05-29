@@ -170,3 +170,9 @@ git push origin master
 
 **Congratulations!**
 In this lab, you built a continuous integration pipeline using the Google Cloud tools Cloud Source Repositories, Cloud Build, build triggers, and Container Registry.
+
+**Credits:-**
+
+Lab link - https://partner.cloudskillsboost.google/course_templates/41
+Disclaimer - I do not own the code/process/tech material used in this project. This code/process is taken from QuickLabs for studying/information purposes.
+Website - https://go.qwiklabs.com/
