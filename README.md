@@ -118,4 +118,35 @@ git push origin master
 
 **Task 5. Automate builds with triggers**
 
+1) On the Navigation menu (Navigation menu icon), click Container Registry. At this point, you should have a folder named devops-image with at least one container in it.
+2) On the Navigation menu, click Cloud Build. The Build history page should open, and one or more builds should be in your history.
+3) Click the Triggers link on the left.
+4) Click Create trigger.
+5) Name the trigger devops-trigger.
+6) Select your devops-repo Git repository under repository dropdown.
+7) Select .*(any branch) for the branch.
+8) Choose Dockerfile for Configuration and select the default image.
+9) Accept the rest of the defaults, and click Create.
+10) To test the trigger, click Run and then Run trigger.
+11) Click the History link and you should see a build running. Wait for the build to finish, and then click the link to it to see its details.
+12) Scroll down and look at the logs. The output of the build here is what you would have seen if you were running it on your machine.
+13) Return to the Container Registry service. You should see a new folder, devops-repo, with a new image in it.
+14) Return to the Cloud Shell Code Editor. Find the file main.py in the gcp-course/devops-repo folder.
+15) In the main() function, change the title property to "Hello Build Trigger." as shown below:
+
+@app.route("/")
+def main():
+    model = {"title":  "Hello Build Trigger."}
+    return render_template(`index.html`, model=model)
+
+16) Commit the change with the following command:
+cd ~/gcp-course/devops-repo
+git commit -a -m "Testing Build Trigger"
+
+17) Enter the following to push your changes to Cloud Source Repositories:
+git push origin master
+18) Return to the Cloud Console and the Cloud Build service. You should see another build running.
+
+**Task 6. Test your build changes**
+
 1) 
