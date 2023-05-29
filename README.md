@@ -69,5 +69,14 @@ git commit -a -m "Initial Commit"
 git push origin master
 20) Refresh the Source Repositories web page. You should see the files you just created.
 
-Task 3. Define a Docker build
+**Task 3. Define a Docker build
+**
+The first step to using Docker is to create a file called Dockerfile. This file defines how a Docker container is constructed. You will do that now.
 
+1) In the Cloud Shell Code Editor, expand the gcp-course/devops-repo folder. With the devops-repo folder selected, on the File menu, click New File and name the new file Dockerfile.
+The file Dockerfile is used to define how the container is built.
+https://github.com/logicopslab/DevOpsProjectWithGCP/blob/main/Dockerfile
+
+**Task 4. Manage Docker images with Cloud Build and Container Registry
+**
+1) 
